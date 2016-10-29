@@ -39,7 +39,7 @@
 
     <TextView
         style="@style/StaticText"
-        android:text="@string/toppings"
+        android:text="cambio a nombre pendejo"
         />
 
     <CheckBox
