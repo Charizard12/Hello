@@ -54,6 +54,12 @@
         style="@style/CheckBoxes"
         />
 
+    <CheckBox
+        android:text="@string/extraCoffe"
+        android:id="@+id/extraCB"
+        style="@style/CheckBoxes"
+        />
+
     <TextView
         android:paddingBottom="16dp"
         android:text="@string/quantity"
