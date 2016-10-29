@@ -48,23 +48,28 @@ public class MainActivity extends AppCompatActivity {
         TextView orderSum = (TextView) findViewById(R.id.precioTv);
         CheckBox cream = (CheckBox) findViewById(R.id.creamCB);
         CheckBox chocolate = (CheckBox) findViewById(R.id.chocolateCB);
+        CheckBox extraCoffe = (CheckBox) findViewById(R.id.extraCB);
 
         String noOrder = getResources().getString(R.string.noOrder);
 
         name = nameEd.getText().toString();
         String creamString = "\n" + getResources().getString(R.string.cream) + ": ";
         String chocoString = "\n" + getResources().getString(R.string.choco) + ": ";
+        String extraString = "\n" + getResources().getString(R.string.extraCoffe) + ": ";
         String quantString = "\n" + getResources().getString(R.string.quantity) + ": ";
         String yes = getResources().getString(R.string.yes);
         String no = getResources().getString(R.string.no);
 
         if ((cantidad > 0) && (name != "")) {
 
-            float total = (precio + (cream.isChecked() ? 1.0f : 0.0f) + (chocolate.isChecked() ? 1.5f : 0.0f)) * cantidad;
+            float total = (precio + (cream.isChecked() ? 1.0f : 0.0f) +
+                    (chocolate.isChecked() ? 1.5f : 0.0f) +
+                    (extraCoffe.isChecked() ? 1.2f : 0.0f))* cantidad;
 
             summary = getString(R.string.summaryName,name)
                     + creamString + (cream.isChecked() ? yes : no)
                     + chocoString + (chocolate.isChecked() ? yes : no)
+                    + extraString + (extraCoffe.isChecked() ? yes : no)
                     + quantString + cantidad
                     + "\nTotal: $" + total
                     + "\n" + getString(R.string.thankYou);
