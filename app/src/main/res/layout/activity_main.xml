@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.secondapp.alicm.hello.MainActivity"
+    android:background="@color/screenBackground"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/coffe_cup"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/ll"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nameHint"
+        android:id="@+id/nameET"
+        android:textColor="@color/titleText"
+        android:maxLines="1"
+        android:maxLength="25"
+
+        />
+
+    <TextView
+        style="@style/StaticText"
+        android:text="@string/toppings"
+        />
+
+    <CheckBox
+        android:text="@string/cream"
+        android:id="@+id/creamCB"
+        style="@style/CheckBoxes"
+        />
+
+    <CheckBox
+        android:text="@string/choco"
+        android:id="@+id/chocolateCB"
+        style="@style/CheckBoxes"
+        />
+
+    <TextView
+        android:paddingBottom="16dp"
+        android:text="@string/quantity"
+        style="@style/StaticText"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <Button
+        android:text="-"
+        android:onClick="decrementar"
+        android:layout_height="36dp"
+        android:layout_width="36dp"
+        android:theme="@style/AppTheme.Button"
+        />
+
+       <TextView
+        android:id="@+id/cantidadTv"
+        android:layout_width="48dp"
+        android:text="0"
+        android:gravity="center_horizontal"
+        style="@style/DynamicTExt"
+        />
+
+    <Button
+        android:text="+"
+        android:onClick="incrementar"
+        android:layout_height="36dp"
+        android:layout_width="36dp"
+        android:theme="@style/AppTheme.Button"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/summary"
+        style="@style/StaticText"
+        />
+    <TextView
+        android:id="@+id/precioTv"
+        android:layout_width="match_parent"
+        android:text="$ 0.00"
+        style="@style/DynamicTExt"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="@string/orderBtn"
+            android:onClick="submitOrder"
+            android:theme="@style/AppTheme.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:text="@string/sendBtn"
+            android:onClick="sendOrder"
+            android:padding="6dp"
+            android:theme="@style/AppTheme.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Activity"
+        android:onClick="nextActivity"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:padding="18dp"
+        android:theme="@style/AppTheme.Button"
+        android:layout_below="@id/ll"
+        />
+
+</RelativeLayout>
+</ScrollView>
+

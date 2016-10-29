@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#a7916a</color>
+    <color name="colorAccent">#804d00</color>
+    <color name="titleText">#69552d</color>
+    <color name="titleBackground">#f1e0ac</color>
+    <color name="screenBackground">#fffbef</color>
+    <color name="butons">#ff9800</color>
+    <color name="butt">#9fc3ea</color>
+
+    <color name="colorPrimary2">#FF9800</color>
+    <color name="colorDark2">#F57C00</color>
+    <color name="titleText2">#FFF3E0</color>
+    <color name="black">#f2e8ca</color>
+
+</resources>
